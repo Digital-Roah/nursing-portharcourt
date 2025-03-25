@@ -1,0 +1,144 @@
+@media (max-width: 992px) {
+    .programs-section {
+        margin-top: 0px;
+    }
+
+    .programs-area {
+        margin-top: 30px;
+    }
+
+    .core-values-area {
+        margin-top: 50px;
+    }
+
+    .subscribe-area {
+        margin-top: 50px;
+    }
+
+    .welcome-area h1 {
+        font-size: 38px;
+    }
+
+    .offk-bg {
+        background: #0c2d3a;
+    }
+
+    .btn-times {
+        color: white;
+        border: none;
+        font-size: 25px;
+    }
+
+    .btn-times:hover {
+        color: white;
+    }
+      
+    .btn-times:focus {
+        box-shadow: none;
+        outline: none;
+        border: none;
+        color: white;
+    }
+
+    .navbar .navbar-nav .nav-item {
+        margin-left: 0px;
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link {
+        color: white;
+    }
+    
+    .navbar .navbar-nav .nav-item.active .nav-link {
+        color: #aee0f9;
+    }
+    
+    .navbar .navbar-nav .nav-item:hover .nav-link {
+        color: #aee0f9;
+    }
+
+    /***** Mobile Dropdown *****/
+    .mobile-drop .droptext {
+        width: 90%;
+      } 
+
+      .mobile-drop .dropicon {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        width: 30px;
+        color: white;
+      } 
+
+      /* .mobile-drop .dropdown-menu {
+        border: none;
+        border-radius: 0px;
+        box-shadow: none;
+        background: transparent;
+        font-size: 15px;
+        font-family: "Barlow", sans-serif;
+      }
+
+      .mobile-drop .dropdown-menu li a {
+        color: white;
+      }
+
+      .mobile-drop .dropdown-menu li a:hover {
+        background: transparent;
+        color: #f8df73;
+      } */
+
+      .mobile-drop .dropdown-menu {
+        border-radius: 0px;
+        /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+        border: none;
+        background: #0c2d3a;
+        padding: 0px;
+    }
+    
+    .mobile-drop .dropdown-menu .dropdown-item {
+        /* border-bottom: 1px solid white; */
+        color: white;
+        padding: 8px 17px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .mobile-drop .dropdown-menu .dropdown-item:last-child {
+        border-bottom: 1px solid #0c2d3a;
+    }
+    
+    .mobile-drop .dropdown-menu .dropdown-item:hover {
+        background: #02aff3;
+        border-bottom: 1px solid #02aff3;
+    }
+    
+    /***** End Mobile Dropdown *****/
+    
+}
+
+@media (max-width: 480px) {
+    .stats-area .stats-content {
+        padding-top: 30px;
+    }
+
+    .banner-text-bg h2 {
+        font-size: 38px;
+    }
+    
+    .banner-text-bg p {
+        font-size: 14px;
+    }
+
+    .btn-apply-ban {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .btn-contact-ban {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
