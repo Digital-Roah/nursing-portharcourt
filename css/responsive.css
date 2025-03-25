@@ -141,4 +141,28 @@
         padding: 8px 20px;
         font-size: 14px;
     }
+
+    .slider {
+        height: 550px;
+    }
+
+    .banner-slides {
+        height: 550px;
+    }
+
+    .banner-slides .slide__img#slide-one {
+        height: 550px;
+    }
+
+    .banner-slides .slide__img#slide-two {
+        height: 550px;
+    }
+
+    .banner-slides .slide__img#slide-three {
+        height: 550px;
+    }
+
+    .banner-text-bg {
+        height: 550px;
+    }
 }
