@@ -165,4 +165,9 @@
     .banner-text-bg {
         height: 550px;
     }
+
+    .header2::after {
+        width: calc(100% - 200px);
+        margin-left: 200px;
+    }
 }
