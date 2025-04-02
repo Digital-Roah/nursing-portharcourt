@@ -170,4 +170,9 @@
         width: calc(100% - 200px);
         margin-left: 200px;
     }
+
+    .othban-textarea h1 {
+        font-size: 38px;
+      }
+      
 }

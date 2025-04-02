@@ -106,6 +106,9 @@ body p,a {
 }
 
 /* Site Colors */
+.text-dark-blue {
+  color: #0c2d3a;
+}
 .text-blue {
     color: #02aff3;
 }
@@ -208,7 +211,7 @@ body p,a {
 }
 
 .navbar .navbar-nav .nav-item {
-    margin-left: 15px;
+    margin-left: 12px;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
@@ -549,6 +552,14 @@ body p,a {
     background: #0c2d3a;
   }
 
+  .mission-textarea ul {
+    padding-inline-start: 20px;
+  }
+
+  .mission-textarea ul li {
+    margin-bottom: 10px;
+  }
+
   .mission-imgarea {
     background: url(../img/gen-img/blacknurse-1.webp) no-repeat;
     background-position: top center;
@@ -670,12 +681,20 @@ body p,a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 30px;
   }
 
   .depart-inner h4 {
     color: white;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 20px;
+  }
+
+  .depart-inner p {
+    color: lightgray;
+    font-size: 13px;
+    margin-bottom: 0px;
   }
 
   .white-bot {
@@ -845,6 +864,129 @@ body p,a {
   }
 
 /***** End Homepage Styles *****/
+
+/***** Other Page Styles *****/
+.about-banner {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(../img/gen-img/blacknurse-6.webp) no-repeat center;
+  min-height: 300px;
+  background-size: cover;
+  padding-top: 95px;
+}
+
+.othban-textarea h1 {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.othban-textarea h6 {
+  color: white;
+  line-height: 1.75em;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.othban-textarea h6 a {
+  color: #63cef8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.department-banner {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(../img/gen-img/blacknurse-5.webp) no-repeat center;
+  min-height: 300px;
+  background-size: cover;
+  padding-top: 95px;
+}
+
+.bursary-banner {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(../img/bursary.jpg) no-repeat center;
+  min-height: 300px;
+  background-size: cover;
+  padding-top: 95px;
+}
+
+.dep-list-area ul {
+  list-style-type: none; /* Remove default bullets */
+  /* padding-left: 20px;  */
+  /* position: relative; */
+  /* Adjust indentation */
+  padding-inline-start: 0px;
+}
+
+.dep-list-area ul li {
+  position: relative;
+  line-height: 2.2em;
+  font-size: 15px;
+  font-weight: 500;
+  padding-left: 25px;
+}
+
+.dep-list-area ul li::before {
+  content: "■"; /* Square character */
+  position: absolute;
+  left: 0;
+  top: -3px;
+  color: transparent; /* Hide fill */
+  -webkit-text-stroke: 2px #ec3237; /* Stroked outline (red) */
+  text-stroke: 2px #ec3237;
+  font-size: 1.2em; /* Adjust size */
+}
+
+.library-banner {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(../img/library.webp) no-repeat center;
+  min-height: 300px;
+  background-size: cover;
+  padding-top: 95px;
+}
+
+.registry-banner {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(../img/registry.webp) no-repeat center;
+  min-height: 300px;
+  background-size: cover;
+  padding-top: 95px;
+}
+
+.btn-prog {
+  color: white;
+  background: #ec3237;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  border-radius: 0px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.btn-prog:hover {
+  background: #0c2d3a;
+  color: white;
+}
+
+.proglist {
+  font-size: 15px;
+  font-weight: 400;
+  color: #868686;
+  padding-inline-start: 15px;
+}
+
+.proglist li {
+  line-height: 1.7em;
+  margin-bottom: 20px
+}
+
+.proglist li::marker {
+  color: #02aff3;
+  font-weight: 600;
+}
+
+.nurse-fullname {
+  font-size: 18px;
+  color: #0c2d3a;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+}
+
+/***** End Other Page Styles *****/
 
 /***** Footer Styles *****/ 
 
