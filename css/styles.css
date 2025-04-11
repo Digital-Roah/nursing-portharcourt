@@ -986,6 +986,105 @@ body p,a {
   font-family: "Lato", sans-serif;
 }
 
+.contact-banner {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(../img/gen-img/banner-5.webp) no-repeat center;
+  min-height: 300px;
+  background-size: cover;
+  padding-top: 95px;
+}
+
+/***** Contact Styles *****/
+.contact-form-area .contact-header h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+}
+
+.contact-form-area .contact-header .red-bot {
+  width: 50px;
+  height: 3px;
+  background: #ec3237;
+}
+
+.contact-group {
+  margin-top: 20px;
+}
+
+.contact-group .form-control {
+  font-size: 14px;
+  padding: 13px 20px;
+  border-radius: 0px;
+  font-weight: 400;
+  color: grey !important;
+}
+
+.contact-group .form-control:focus {
+  box-shadow: none;
+  color: initial;
+  border-color: #dee2e6;  
+}
+
+.contact-info-area {
+  padding-top: 30px;
+}
+
+.contact-info-area .info-area {
+  margin-top: 20px;
+}
+
+.btn-submit {
+  color: white;
+  border: 1px solid #ec3237 !important;
+  background: #ec3237;
+  padding: 15px 30px;
+  border-radius: 0px;
+  transition:all 0.8s, color 0.3s 0.3s;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.btn-submit:hover {
+  color: #ec3237 !important;
+  background: white !important;
+  box-shadow:300px 0 0 0 white inset !important;
+}
+/***** End Contact Styles *****/
+
+.announce-body {
+  line-height: 1.75em;
+  font-size: 14px;
+  font-weight: 400;
+  color: #646464;
+}
+
+.search-header h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.search-header .red-bot {
+  width: 50px;
+  height: 3px;
+  background: #ec3237;
+}
+
+.search-form .form-control {
+  border-radius: 0px;
+  font-size: 14.5px;
+  font-family: "Lato", sans-serif;
+}
+
+.search-form .form-control:focus {
+  box-shadow: none;
+  border-color: #dee2e6;
+}
+
+.search-form .btn-search {
+  border-radius: 0px;
+  color: white;
+  background-color: #ec3237;
+  border: 1px solid #ec3237;
+}
+
 /***** End Other Page Styles *****/
 
 /***** Footer Styles *****/ 
