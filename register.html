@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Rivers State College of Nursing Sciences, Port Harcourt - Login</title>
+        <title>Rivers State College of Nursing Sciences, Port Harcourt - Register</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -39,13 +39,41 @@
                             <a href="index.html">
                               <img src="img/logo.jpg" alt="Logo" width="70px" class="img-logo">
                             </a>
-                            <h5 class="mt-3 pb-3 font-600">Student's Portal Login</h5>
+                            <h5 class="mt-3 pb-2 font-600">Start New Application</h5>
                         </div>
+                        <div class="alert alert-warning mb-3" role="alert">
+                            <p class="font-13 mb-0"><strong class="text-red"><i class="fas fa-warning"></i> Note:</strong> Please read and follow all instructions carefully before beginning your application. The information provided in this form will be recorded permanently in our database. Therefore, ensure accuracy, as any errors may be difficult and costly to amend later.</p>
+                        </div>
+                        
                         <form action="" method="post" class="auth-form">
+                            <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="prefixId"><i class="far fa-user"></i></span>
+                                    <input type="text" name="surname" id="surname" class="form-control" placeholder="Surname" aria-describedby="prefixId" required/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="prefixId"><i class="far fa-user"></i></span>
+                                    <input type="text" name="firstname" id="firstname" class="form-control" placeholder="First Name" aria-describedby="prefixId" required/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="prefixId"><i class="far fa-user"></i></span>
+                                    <input type="text" name="middlename" id="middlename" class="form-control" placeholder="Middle Name" aria-describedby="prefixId" required/>
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="prefixId"><i class="fa fa-envelope-o"></i></span>
                                     <input type="email" name="email" id="email" class="form-control" placeholder="Enter Email Address" aria-describedby="prefixId" required/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="prefixId"><i class="fa fa-phone"></i></span>
+                                    <input type="tel" name="phone" id="phone" class="form-control" placeholder="Enter Phone Number" aria-describedby="prefixId" required/>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -55,21 +83,25 @@
                                     <span class="input-group-text" id="showpass"><i class="fas fa-eye-slash" id="eyeicon"></i></span>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="prefixId"><i class="fas fa-key"></i></span>
+                                    <input type="password" name="password_confirmation" id="password2" class="form-control" placeholder="Confirm Your Password" aria-describedby="prefixId" required/>
+                                    <span class="input-group-text" id="showpass2"><i class="fas fa-eye-slash" id="eyeicon2"></i></span>
+                                </div>
+                            </div>
                             <div class="row">
                                 <div class="col">
                                    <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="remember" name="remember"/>
-                                    <label class="form-check-label" for="remember">Remember Me</label>
+                                    <input class="form-check-input" type="checkbox" id="accept" name="accept"/>
+                                    <label class="form-check-label" for="accept">I read and accept <a href="#" class="form-link">Terms & Conditions.</a></label>
                                    </div>
-                                </div>
-                                <div class="col text-end">
-                                   <a href="#un" class="form-link">Forgot Password?</a>
                                 </div>
                             </div>
                             <div class="d-grid pt-3">
-                                <button type="submit" class="btn btn-auth"><i class="fas fa-sign-in-alt me-1"></i> Login</button>
+                                <button type="submit" class="btn btn-auth"><i class="fas fa-sign-in-alt me-1"></i> Proceed</button>
                             </div>
-                            <p class="text-center mt-3">Don't have an Account? <a href="#un" class="form-link"><i class="fas fa-user-plus"></i> Register</a></p>
+                            <p class="text-center mt-3">Already have an Account? <a href="#un" class="form-link"> Login</a></p>
                         </form>
                     </div>
                 </div>

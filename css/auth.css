@@ -1,0 +1,163 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 300;
+    /* background: #e3f1f7; */
+    background: #edf5f9;
+}
+
+body {
+    padding: 70px 0px;
+}
+
+body p,a {
+    line-height: 1.75em;
+    font-size: 14px;
+    font-weight: 400;
+    color: #646464;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.font-100 {
+    font-weight: 100;
+}
+
+.font-200 {
+    font-weight: 200;
+}
+
+.font-300 {
+    font-weight: 300;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.font-500 {
+    font-weight: 500;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+
+.font-800 {
+    font-weight: 800;
+}
+
+.font-900 {
+    font-weight: 900;
+}
+
+.font-10 {
+    font-size: 10px;
+ }
+
+.font-11 {
+    font-size: 11px;
+ }
+
+.font-12 {
+    font-size: 12px;
+ }
+
+.font-13 {
+    font-size: 13px;
+ }
+
+.font-14 {
+   font-size: 14px;
+}
+
+.font-15 {
+  font-size: 15px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-17 {
+  font-size: 17px;
+}
+
+/* Site Colors */
+.text-dark-blue {
+  color: #0c2d3a;
+}
+.text-blue {
+    color: #02aff3;
+}
+.text-mid-blue {
+  color: #39bbee;
+}
+.text-light-blue {
+    color: #aee0f9;
+}
+.text-red {
+    color: #ec3237;
+}
+/* End Site Colors */
+
+.auth-area {
+  padding: 30px;
+  background: white;
+  border-radius: 5px;
+}
+
+.auth-form .form-group .input-group .form-control {
+   border-radius: 0px;
+   font-size: 14.5px;
+   padding: 8px 15px;
+}
+
+.auth-form .form-group .input-group .input-group-text {
+    border-radius: 0px;
+    padding: 8px 14px;
+    font-size: 14.5px;
+    color: white;
+    background-color: #02aff3;
+    border-color: 1px solid #02aff3;
+}
+
+.auth-form .form-group .input-group .form-control:focus {
+    box-shadow: none;
+    border-color: #dee2e6;
+}
+
+.auth-form .form-check-inline {
+    font-size: 14px;
+    color: #0c2d3a;
+}
+
+.auth-form .form-link {
+    color: #0c2d3a;
+}
+
+.auth-form .form-link:hover {
+    color: #ec3237;
+}
+
+.btn-auth {
+    color: white;
+    background: #0c2d3a;
+    border: 1px solid #0c2d3a;
+    border-radius: 0px;
+    font-size: 14.5px;
+    padding: 8px 15px;
+}
+
+.btn-auth:hover {
+    color: white;
+    background: #ec3237;
+    border: 1px solid #ec3237;
+}
