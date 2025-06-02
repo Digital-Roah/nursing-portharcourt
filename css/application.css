@@ -9,7 +9,7 @@ html, body {
 
 body {
     padding: 70px 0px;
-    background: linear-gradient(135deg, rgba(2, 175, 243, 0.7), rgba(0, 72, 128, 0.7)), url(../img/school-building.jpg) no-repeat center;
+    background: linear-gradient(135deg, rgba(2, 175, 243, 0.7), rgba(0, 72, 128, 0.7)), url(../img/uploads/IMG_7113.JPG) no-repeat center;
     background-size: cover;
     min-height: 100vh;
 }
@@ -116,3 +116,302 @@ body p,a {
     background: white;
     border-radius: 5px;
 }
+
+/* Application Step by Step */
+
+#heading {
+    text-transform: uppercase;
+    color: #02325f;
+    font-weight: normal
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.form-card {
+    text-align: left
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+#msform .form-content {
+    text-align: left;
+}
+
+.form-subheader {
+    font-size: 18px;
+    font-weight: 600;
+    /* margin-bottom: 15px; */
+}
+
+.dash-group label {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.dash-control {
+    border-radius: 0px;
+    font-size: 15px;
+    padding: 8px 15px;
+}
+
+.dash-control:focus {
+    /* border-color: #dee2e6; */
+    box-shadow: none;
+    border-color: #02aff3;
+}
+
+/* #msform input,
+#msform textarea {
+    padding: 8px 15px 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    background-color: #ECEFF1;
+    font-size: 16px;
+    letter-spacing: 1px
+}
+
+#msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #02325f;
+    outline-width: 0
+} */
+
+#msform .action-button {
+    width: 100px;
+    background: #02325f;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0px 10px 5px;
+    float: right
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    background-color: #02aff3
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #ec3237;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px 10px 0px;
+    float: right
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    background-color: #39bbee
+}
+
+.fs-title {
+    font-size: 20px;
+    color: #02325f;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: left
+}
+
+.purple-text {
+    color: #02325f;
+    font-weight: normal
+}
+
+.steps {
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right
+}
+
+.fieldlabels {
+    color: gray;
+    text-align: left
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
+}
+
+#progressbar .active {
+    color: #02325f
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+}
+
+#progressbar #account:before {
+    font-family: FontAwesome;
+    content: "\f007";
+}
+
+#progressbar #personal:before {
+    font-family: FontAwesome;
+    content: "\f030"
+}
+
+#progressbar #payment:before {
+    font-family: FontAwesome;
+    content: "\f53c"
+}
+
+#progressbar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f00c"
+}
+
+@media (max-width: 480px) {
+    #progressbar li {
+        font-size: 13px;
+    }
+
+    #progressbar li:before {
+        width: 40px;
+        height: 40px;
+        line-height: 35px;
+        font-size: 16px;
+    }
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px;
+    z-index: 99999;
+    position: relative;
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    /* z-index: -1; */
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #02325f;
+}
+
+.progress {
+    height: 20px
+}
+
+/* .progress-bar {
+    background-color: #673AB7
+} */
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+
+/* Progress Bar Styles */
+@-webkit-keyframes progress-bar-stripes{from{background-position:1rem 0}to{background-position:0 0}}@keyframes progress-bar-stripes{from{background-position:1rem 0}to{background-position:0 0}}.progress{display:-ms-flexbox;display:flex;height:1rem;overflow:hidden;font-size:.75rem;background-color:#e9ecef;border-radius:.25rem}.progress-bar{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:center;justify-content:center;color:#fff;text-align:center;white-space:nowrap;background-color:#02325f;transition:width .6s ease}@media (prefers-reduced-motion:reduce){.progress-bar{transition:none}}.progress-bar-striped{background-image:linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-size:1rem 1rem}.progress-bar-animated{-webkit-animation:progress-bar-stripes 1s linear infinite;animation:progress-bar-stripes 1s linear infinite}@media (prefers-reduced-motion:reduce){.progress-bar-animated{-webkit-animation:none;animation:none}}
+
+.payment-text {
+    font-size: 17px;
+    color: #012241;
+    font-weight: 600;
+}
+
+.spinner-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+}
+
+.spinner-bg .spinner-loader {
+    position: fixed;
+    top: 55%;
+    left: 55%;
+}
+
+@media (max-width:992px) {
+    .spinner-bg .spinner-loader {
+        position: fixed;
+        top: 45%;
+        left: 45%;
+    }
+}
+
+.loader {
+    border: 5px solid #F4D933;
+    border-radius: 50%;
+    border-top: 5px solid transparent;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 0.5s linear infinite; /* Safari */
+    animation: spin 0.5s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* End Application Step by Step Styles */

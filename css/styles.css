@@ -318,7 +318,7 @@ body p,a {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.7)) , url(../img/gen-img/banner-4.webp) no-repeat center;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.7)) , url(../img/uploads/IMG_7125.JPG) no-repeat center;
   width: 100%;
   height: 500px;
   opacity: 1 !important;
@@ -332,7 +332,7 @@ body p,a {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.7)) , url(../img/gen-img/banner-2.webp) no-repeat center;
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.7)) , url(../img/uploads/IMG_7105.JPG) no-repeat center;
     width: 100%;
     height: 500px;
     opacity: 1 !important;
@@ -346,7 +346,7 @@ body p,a {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.7)) , url(../img/gen-img/banner-3.webp) no-repeat center;
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.7)) , url(../img/uploads/IMG_7115.JPG) no-repeat center;
     width: 100%;
     height: 500px;
     opacity: 1 !important;
@@ -561,7 +561,7 @@ body p,a {
   }
 
   .mission-imgarea {
-    background: url(../img/gen-img/blacknurse-1.webp) no-repeat;
+    background: url(../img/uploads/IMG_7132.JPG) no-repeat;
     background-position: top center;
     background-size: cover;
     width: 100%;
@@ -570,7 +570,7 @@ body p,a {
   }
 
   .vision-imgarea {
-    background: url(../img/gen-img/blacknurse-2.webp) no-repeat;
+    background: url(../img/uploads/IMG_7104.JPG) no-repeat;
     background-position: top center;
     background-size: cover;
     width: 100%;
@@ -579,7 +579,7 @@ body p,a {
   }
 
   .core-values-area {
-    background: linear-gradient(135deg, rgba(2, 175, 243, 0.7), rgba(0, 72, 128, 0.7)), url(../img/gen-img/blacknurse-5.webp) no-repeat center;
+    background: linear-gradient(135deg, rgba(2, 175, 243, 0.7), rgba(0, 72, 128, 0.7)), url(../img/uploads/IMG_7170.JPG) no-repeat center;
     background-size: cover;
     min-height: 570px;
     padding: 30px 0px;
@@ -613,7 +613,7 @@ body p,a {
 
   .stats-area {
     margin-top: 70px;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url(../img/gen-img/banner-1.webp) no-repeat center fixed;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url(../img/uploads/IMG_7100.JPG) no-repeat center fixed;
     background-size: cover;
     min-height: 240px;
     padding-top: 50px;
@@ -807,7 +807,7 @@ body p,a {
   }
 
   .subscribe-area {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../img/gen-img/blacknurse-4.webp) no-repeat center;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../img/uploads/IMG_7109.JPG) no-repeat center;
     background-size: cover;
     min-height: 500px;
     padding: 30px 40px;
@@ -867,7 +867,7 @@ body p,a {
 
 /***** Other Page Styles *****/
 .about-banner {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(../img/gen-img/blacknurse-6.webp) no-repeat center;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(../img/uploads/IMG_7118.JPG) no-repeat center;
   min-height: 300px;
   background-size: cover;
   padding-top: 95px;
@@ -893,7 +893,14 @@ body p,a {
 }
 
 .department-banner {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(../img/gen-img/blacknurse-5.webp) no-repeat center;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(../img/uploads/IMG_7160.JPG) no-repeat center;
+  min-height: 300px;
+  background-size: cover;
+  padding-top: 95px;
+}
+
+.subpage-banner {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(../img/uploads/IMG_7112.JPG) no-repeat center;
   min-height: 300px;
   background-size: cover;
   padding-top: 95px;
@@ -987,7 +994,7 @@ body p,a {
 }
 
 .contact-banner {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(../img/gen-img/banner-5.webp) no-repeat center;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(../img/uploads/IMG_7148.JPG) no-repeat center;
   min-height: 300px;
   background-size: cover;
   padding-top: 95px;

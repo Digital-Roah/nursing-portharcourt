@@ -37,11 +37,984 @@
                     <a href="index.html">
                       <img src="img/logo.jpg" alt="Logo" width="70px" class="img-logo">
                     </a>
-                    <h5 class="mt-3 pb-2 font-600">Complete Application Form</h5>
+                    <h5 class="mt-3 pb-2 font-600">Student's Application Form</h5>
                 </div>
-                <!-- <div class="alert alert-warning mb-3" role="alert">
+                <div class="alert alert-warning mb-3" role="alert">
                     <p class="font-13 mb-0"><strong class="text-red"><i class="fas fa-warning"></i> Note:</strong> Please read and follow all instructions carefully before beginning your application. The information provided in this form will be recorded permanently in our database. Therefore, ensure accuracy, as any errors may be difficult and costly to amend later.</p>
-                </div> -->
+                </div>
+    
+                <div class="stepform-area">
+                    <form id="msform">
+                        <!-- progressbar -->
+                        <ul id="progressbar">
+                            <li class="active" id="account"><strong>General Information</strong></li>
+                            <li id="personal"><strong>Uploads & Results</strong></li>
+                            <li id="payment"><strong>Payment & Finish</strong></li>
+                            <!-- <li id="confirm"><strong>Finish</strong></li> -->
+                        </ul>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" id="progress-status" role="progressbar" aria-valuemin="0" aria-valuemax="100">0% Complete</div>
+                        </div> <br> <!-- fieldsets -->
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">General Information:</h2>
+                                    </div>
+                                    <div class="col-5">
+                                        <h2 class="steps">Step 1 - 3</h2>
+                                    </div>
+                                </div> 
+
+                                <div class="form-content mb-4">
+
+                                    <div class="mt-2">
+                                    <h4 class="form-subheader text-red">1. Personal Information</h4>
+                                    <div class="row">
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group dash-group mt-2">
+                                        <label for="first_name" class="form-label">First Name</label>
+                                        <input type="text" name="first_name" id="first_name" class="form-control dash-control" placeholder="Enter First Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group dash-group mt-2">
+                                        <label for="mid_name" class="form-label">Middle Name</label>
+                                        <input type="text" name="mid_name" id="mid_name" class="form-control dash-control" placeholder="Enter Middle Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group dash-group mt-2">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" name="email" id="email" class="form-control dash-control" placeholder="Enter Email Address">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group dash-group mt-2">
+                                        <label for="tel" class="form-label">Phone Number</label>
+                                        <input type="tel" name="tel" id="tel" class="form-control dash-control" placeholder="Enter Phone Number">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group dash-group mt-2">
+                                        <label for="avatar" class="form-label">Passport Photograph</label>
+                                        <input type="file" name="avatar" id="avatar" class="form-control dash-control" accept="image/*">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group dash-group mt-2">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" name="password" id="password" class="form-control dash-control" placeholder="Enter Password">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group dash-group mt-2">
+                                        <label for="dob" class="form-label">Date of Birth</label>
+                                        <input type="date" name="dob" class="form-control dash-control" id="dob">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group dash-group mt-2">
+                                        <label for="nationality" class="form-label">Nationality</label>
+                                        <select name="nationality" id="nationality" class="form-select dash-control" required>
+  <option value="">-- Select Nationality --</option>
+  <option value="Afghanistan">Afghanistan</option>
+  <option value="Albania">Albania</option>
+  <option value="Algeria">Algeria</option>
+  <option value="Andorra">Andorra</option>
+  <option value="Angola">Angola</option>
+  <option value="Argentina">Argentina</option>
+  <option value="Armenia">Armenia</option>
+  <option value="Australia">Australia</option>
+  <option value="Austria">Austria</option>
+  <option value="Azerbaijan">Azerbaijan</option>
+  <option value="Bahamas">Bahamas</option>
+  <option value="Bahrain">Bahrain</option>
+  <option value="Bangladesh">Bangladesh</option>
+  <option value="Barbados">Barbados</option>
+  <option value="Belarus">Belarus</option>
+  <option value="Belgium">Belgium</option>
+  <option value="Belize">Belize</option>
+  <option value="Benin">Benin</option>
+  <option value="Bhutan">Bhutan</option>
+  <option value="Bolivia">Bolivia</option>
+  <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+  <option value="Botswana">Botswana</option>
+  <option value="Brazil">Brazil</option>
+  <option value="Brunei">Brunei</option>
+  <option value="Bulgaria">Bulgaria</option>
+  <option value="Burkina Faso">Burkina Faso</option>
+  <option value="Burundi">Burundi</option>
+  <option value="Cabo Verde">Cabo Verde</option>
+  <option value="Cambodia">Cambodia</option>
+  <option value="Cameroon">Cameroon</option>
+  <option value="Canada">Canada</option>
+  <option value="Central African Republic">Central African Republic</option>
+  <option value="Chad">Chad</option>
+  <option value="Chile">Chile</option>
+  <option value="China">China</option>
+  <option value="Colombia">Colombia</option>
+  <option value="Comoros">Comoros</option>
+  <option value="Congo (Brazzaville)">Congo (Brazzaville)</option>
+  <option value="Congo (Kinshasa)">Congo (Kinshasa)</option>
+  <option value="Costa Rica">Costa Rica</option>
+  <option value="Croatia">Croatia</option>
+  <option value="Cuba">Cuba</option>
+  <option value="Cyprus">Cyprus</option>
+  <option value="Czech Republic">Czech Republic</option>
+  <option value="Denmark">Denmark</option>
+  <option value="Djibouti">Djibouti</option>
+  <option value="Dominica">Dominica</option>
+  <option value="Dominican Republic">Dominican Republic</option>
+  <option value="Ecuador">Ecuador</option>
+  <option value="Egypt">Egypt</option>
+  <option value="El Salvador">El Salvador</option>
+  <option value="Equatorial Guinea">Equatorial Guinea</option>
+  <option value="Eritrea">Eritrea</option>
+  <option value="Estonia">Estonia</option>
+  <option value="Eswatini">Eswatini</option>
+  <option value="Ethiopia">Ethiopia</option>
+  <option value="Fiji">Fiji</option>
+  <option value="Finland">Finland</option>
+  <option value="France">France</option>
+  <option value="Gabon">Gabon</option>
+  <option value="Gambia">Gambia</option>
+  <option value="Georgia">Georgia</option>
+  <option value="Germany">Germany</option>
+  <option value="Ghana">Ghana</option>
+  <option value="Greece">Greece</option>
+  <option value="Grenada">Grenada</option>
+  <option value="Guatemala">Guatemala</option>
+  <option value="Guinea">Guinea</option>
+  <option value="Guinea-Bissau">Guinea-Bissau</option>
+  <option value="Guyana">Guyana</option>
+  <option value="Haiti">Haiti</option>
+  <option value="Honduras">Honduras</option>
+  <option value="Hungary">Hungary</option>
+  <option value="Iceland">Iceland</option>
+  <option value="India">India</option>
+  <option value="Indonesia">Indonesia</option>
+  <option value="Iran">Iran</option>
+  <option value="Iraq">Iraq</option>
+  <option value="Ireland">Ireland</option>
+  <option value="Israel">Israel</option>
+  <option value="Italy">Italy</option>
+  <option value="Ivory Coast">Ivory Coast</option>
+  <option value="Jamaica">Jamaica</option>
+  <option value="Japan">Japan</option>
+  <option value="Jordan">Jordan</option>
+  <option value="Kazakhstan">Kazakhstan</option>
+  <option value="Kenya">Kenya</option>
+  <option value="Kiribati">Kiribati</option>
+  <option value="Kuwait">Kuwait</option>
+  <option value="Kyrgyzstan">Kyrgyzstan</option>
+  <option value="Laos">Laos</option>
+  <option value="Latvia">Latvia</option>
+  <option value="Lebanon">Lebanon</option>
+  <option value="Lesotho">Lesotho</option>
+  <option value="Liberia">Liberia</option>
+  <option value="Libya">Libya</option>
+  <option value="Liechtenstein">Liechtenstein</option>
+  <option value="Lithuania">Lithuania</option>
+  <option value="Luxembourg">Luxembourg</option>
+  <option value="Madagascar">Madagascar</option>
+  <option value="Malawi">Malawi</option>
+  <option value="Malaysia">Malaysia</option>
+  <option value="Maldives">Maldives</option>
+  <option value="Mali">Mali</option>
+  <option value="Malta">Malta</option>
+  <option value="Marshall Islands">Marshall Islands</option>
+  <option value="Mauritania">Mauritania</option>
+  <option value="Mauritius">Mauritius</option>
+  <option value="Mexico">Mexico</option>
+  <option value="Micronesia">Micronesia</option>
+  <option value="Moldova">Moldova</option>
+  <option value="Monaco">Monaco</option>
+  <option value="Mongolia">Mongolia</option>
+  <option value="Montenegro">Montenegro</option>
+  <option value="Morocco">Morocco</option>
+  <option value="Mozambique">Mozambique</option>
+  <option value="Myanmar">Myanmar</option>
+  <option value="Namibia">Namibia</option>
+  <option value="Nauru">Nauru</option>
+  <option value="Nepal">Nepal</option>
+  <option value="Netherlands">Netherlands</option>
+  <option value="New Zealand">New Zealand</option>
+  <option value="Nicaragua">Nicaragua</option>
+  <option value="Niger">Niger</option>
+  <option value="Nigeria" selected>Nigeria</option>
+  <option value="North Korea">North Korea</option>
+  <option value="North Macedonia">North Macedonia</option>
+  <option value="Norway">Norway</option>
+  <option value="Oman">Oman</option>
+  <option value="Pakistan">Pakistan</option>
+  <option value="Palau">Palau</option>
+  <option value="Panama">Panama</option>
+  <option value="Papua New Guinea">Papua New Guinea</option>
+  <option value="Paraguay">Paraguay</option>
+  <option value="Peru">Peru</option>
+  <option value="Philippines">Philippines</option>
+  <option value="Poland">Poland</option>
+  <option value="Portugal">Portugal</option>
+  <option value="Qatar">Qatar</option>
+  <option value="Romania">Romania</option>
+  <option value="Russia">Russia</option>
+  <option value="Rwanda">Rwanda</option>
+  <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+  <option value="Saint Lucia">Saint Lucia</option>
+  <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+  <option value="Samoa">Samoa</option>
+  <option value="San Marino">San Marino</option>
+  <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+  <option value="Saudi Arabia">Saudi Arabia</option>
+  <option value="Senegal">Senegal</option>
+  <option value="Serbia">Serbia</option>
+  <option value="Seychelles">Seychelles</option>
+  <option value="Sierra Leone">Sierra Leone</option>
+  <option value="Singapore">Singapore</option>
+  <option value="Slovakia">Slovakia</option>
+  <option value="Slovenia">Slovenia</option>
+  <option value="Solomon Islands">Solomon Islands</option>
+  <option value="Somalia">Somalia</option>
+  <option value="South Africa">South Africa</option>
+  <option value="South Korea">South Korea</option>
+  <option value="South Sudan">South Sudan</option>
+  <option value="Spain">Spain</option>
+  <option value="Sri Lanka">Sri Lanka</option>
+  <option value="Sudan">Sudan</option>
+  <option value="Suriname">Suriname</option>
+  <option value="Sweden">Sweden</option>
+  <option value="Switzerland">Switzerland</option>
+  <option value="Syria">Syria</option>
+  <option value="Taiwan">Taiwan</option>
+  <option value="Tajikistan">Tajikistan</option>
+  <option value="Tanzania">Tanzania</option>
+  <option value="Thailand">Thailand</option>
+  <option value="Togo">Togo</option>
+  <option value="Tonga">Tonga</option>
+  <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+  <option value="Tunisia">Tunisia</option>
+  <option value="Turkey">Turkey</option>
+  <option value="Turkmenistan">Turkmenistan</option>
+  <option value="Tuvalu">Tuvalu</option>
+  <option value="Uganda">Uganda</option>
+  <option value="Ukraine">Ukraine</option>
+  <option value="United Arab Emirates">United Arab Emirates</option>
+  <option value="United Kingdom">United Kingdom</option>
+  <option value="United States">United States</option>
+  <option value="Uruguay">Uruguay</option>
+  <option value="Uzbekistan">Uzbekistan</option>
+  <option value="Vanuatu">Vanuatu</option>
+  <option value="Vatican City">Vatican City</option>
+  <option value="Venezuela">Venezuela</option>
+  <option value="Vietnam">Vietnam</option>
+  <option value="Yemen">Yemen</option>
+  <option value="Zambia">Zambia</option>
+  <option value="Zimbabwe">Zimbabwe</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group dash-group mt-2">
+                                        <label for="state" class="form-label">State of Origin</label>
+                                        <select name="state" id="state" class="form-select dash-control">
+                                            <option value="Anambra">Anambra</option>
+                                            <option value="Lagos">Lagos</option>
+                                            <option value="Plateau">Plateau</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group dash-group mt-2">
+                                        <label for="lga" class="form-label">Local Government Area</label>
+                                        <select name="lga" id="lga" class="form-select dash-control">
+                                            <option value="Jos North">Jos North</option>
+                                            <option value="Jos South">Jos South</option>
+                                            <option value="Jos East">Jos East</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group dash-group mt-2">
+                                        <label for="religion" class="form-label">Religion</label>
+                                        <select name="religion" id="religion" class="form-select dash-control">
+                                            <option value="Christianity">Christianity</option>
+                                            <option value="Islam">Islam</option>
+                                            <option value="Traditional">Traditional</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group dash-group mt-2">
+                                        <label for="gender" class="form-label">Gender</label>
+                                        <select name="gender" id="gender" class="form-select dash-control">
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group dash-group mt-2">
+                                        <label for="blood" class="form-label">Blood Group</label>
+                                        <select name="blood" id="blood" class="form-select dash-control">
+                                            <option value="A+">A+</option>
+                                            <option value="A-">A-</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B-">B-</option>
+                                            <option value="AB+">AB+</option>
+                                            <option value="AB-">AB-</option>
+                                            <option value="O+">O+</option>
+                                            <option value="O-">O-</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group dash-group mt-2">
+                                        <label for="marital_status" class="form-label">Marital Status</label>
+                                        <select name="marital_status" id="marital_status" class="form-select dash-control">
+                                            <option value="Single">Single</option>
+                                            <option value="Married">Married</option>
+                                            <option value="Divorced">Divorced</option>
+                                            <option value="Separated">Separated</option>
+                                            <option value="Widowed">Widowed</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group dash-group mt-2">
+                                        <label for="mode_of_entry" class="form-label">Mode of Entry</label>
+                                        <select name="mode_of_entry" id="mode_of_entry" class="form-select dash-control">
+                                            <option value="School of Nursing Entrance Exam">School of Nursing Entrance Exam</option>
+                                            <option value="UTME (JAMB)">UTME (JAMB)</option>
+                                            <option value="Direct Entry">Direct Entry</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group dash-group mt-2">
+                                        <label for="physically_challenged" class="form-label">Physically Challenged</label>
+                                        <select name="physically_challenged" id="physically_challenged" class="form-select dash-control">
+                                            <option value="No">No</option>
+                                            <option value="Visually Impaired">Yes, Visually Impaired</option>
+                                            <option value="Hearing Impaired">Yes, Hearing Impaired</option>
+                                            <option value="Mobility Impaired">Yes, Mobility Impaired</option>
+                                            <option value="Other">Yes, Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="program" class="form-label">Choose Program</label>
+                                                <select name="program" id="program" class="form-select dash-control">
+                                                    <option value="Basic Nursing Certificate">Basic Nursing Certificate</option>
+                                                    <option value="ND Nursing (General Nursing)">ND Nursing (General Nursing)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="study_mode" class="form-label">Study Mode</label>
+                                                <select name="study_mode" id="study_mode" class="form-select dash-control">
+                                                    <option value="Full Time">Full Time</option>
+                                                    <option value="Part Time">Part Time</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group dash-group mt-2">
+                                        <label for="jamb_regno" class="form-label">Jamb Registration No.</label>
+                                        <input type="text" name="jamb_regno" id="jamb_regno" class="form-control dash-control" placeholder="Enter Jamb Registration No.">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group dash-group mt-2">
+                                        <label for="address" class="form-label">Residential Address</label>
+                                        <textarea rows="3" name="address" id="address" class="form-control dash-control" placeholder="Enter Residential Address"></textarea>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <h4 class="form-subheader text-red">2. Parent/Guardian Information</h4>
+
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="parent_name" class="form-label">Parent/Guardian Name</label>
+                                                <input type="text" name="parent_name" class="form-control dash-control" id="parent_name" placeholder="Enter Parent/Guardian Name">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="parent_email" class="form-label">Parent/Guardian Email</label>
+                                                <input type="email" name="parent_email" class="form-control dash-control" id="parent_email" placeholder="Enter Parent/Guardian Email">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="parent_tel" class="form-label">Phone Number</label>
+                                                <input type="tel" name="parent_tel" class="form-control dash-control" id="parent_tel" placeholder="Enter Phone Number">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="parent_relation" class="form-label">Relationship</label>
+                                                <select name="parent_relation" id="parent_relation" class="form-select dash-control">
+                                                    <option value="Father">Father</option>
+                                                    <option value="Mother">Mother</option>
+                                                    <option value="Brother">Brother</option>
+                                                    <option value="Sister">Sister</option>
+                                                    <option value="Husband">Husband</option>
+                                                    <option value="Wife">Wife</option>
+                                                    <option value="Uncle">Uncle</option>
+                                                    <option value="Aunt">Aunt</option>
+                                                    <option value="Cousin">Cousin</option>
+                                                    <option value="Son">Son</option>
+                                                    <option value="Daughter">Daughter</option>
+                                                    <option value="Nephew">Nephew</option>
+                                                    <option value="Niece">Niece</option>
+                                                    <option value="Guardian">Guardian</option>
+                                                    <option value="Friend">Friend</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="parent_occupation" class="form-label">Occupation</label>
+                                                <input type="text" name="parent_occupation" class="form-control dash-control" id="parent_occupation" placeholder="Enter Occupation">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="parent_address" class="form-label">Residential Address</label>
+                                                <textarea rows="3" name="parent_address" id="parent_address" class="form-control dash-control" placeholder="Enter Residential Address"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <h4 class="form-subheader text-red">3. Next of Kin Information</h4>
+                                    <!-- <h5 class="font-17 font-600 mb-1 mt-2">Next of Kin Information</h5> -->
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="nok_name" class="form-label">Full Name</label>
+                                                <input type="text" name="nok_name" class="form-control dash-control" id="nok_name" placeholder="Enter NOK Name">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="nok_phone" class="form-label">Phone Number</label>
+                                                <input type="tel" name="nok_phone" class="form-control dash-control" id="nok_phone" placeholder="Enter NOK Phone Number">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="nok_relation" class="form-label">Relationship</label>
+                                                <select name="nok_relation" id="nok_relation" class="form-select dash-control">
+                                                    <option value="Father">Father</option>
+                                                    <option value="Mother">Mother</option>
+                                                    <option value="Brother">Brother</option>
+                                                    <option value="Sister">Sister</option>
+                                                    <option value="Husband">Husband</option>
+                                                    <option value="Wife">Wife</option>
+                                                    <option value="Uncle">Uncle</option>
+                                                    <option value="Aunt">Aunt</option>
+                                                    <option value="Cousin">Cousin</option>
+                                                    <option value="Son">Son</option>
+                                                    <option value="Daughter">Daughter</option>
+                                                    <option value="Nephew">Nephew</option>
+                                                    <option value="Niece">Niece</option>
+                                                    <option value="Guardian">Guardian</option>
+                                                    <option value="Friend">Friend</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="nok_email" class="form-label">Email Address</label>
+                                                <input type="email" name="nok_email" class="form-control dash-control" id="nok_email" placeholder="Enter NOK Email Address">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="nok_address" class="form-label">Residential Address</label>
+                                                <textarea rows="3" name="nok_address" id="nok_address" class="form-control dash-control" placeholder="Enter NOK Residential Address"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="mt-4">
+                                    <h4 class="form-subheader text-red">3. Academic Qualifications</h4>
+
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="sec_school" class="form-label">Secondary School Attended</label>
+                                                <textarea rows="3" name="sec_school" id="sec_school" class="form-control dash-control" placeholder="Enter Secondary School Attended"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="sec_graduated" class="form-label">Year Graduated</label>
+                                                <input type="number" name="sec_graduated" class="form-control dash-control" id="sec_graduated" placeholder="Enter Year Graduated">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                                <!-- <div class="mt-4">
+                                    <h4 class="form-subheader text-red">4. Program Selection</h4>
+
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="program" class="form-label">Choose Program</label>
+                                                <select name="program" id="program" class="form-select dash-control">
+                                                    <option value="ND Nursing (General Nursing)">ND Nursing (General Nursing)</option>
+                                                    <option value="Refresher course for eliminated Candidates by Nursing & Midwifery Council of Nigeria">Refresher course for eliminated Candidates by Nursing & Midwifery Council of Nigeria</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="study_mode" class="form-label">Study Mode</label>
+                                                <select name="study_mode" id="study_mode" class="form-select dash-control">
+                                                    <option value="Full Time">Full Time</option>
+                                                    <option value="Part Time">Part Time</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+
+                            </div>
+
+                            </div>
+                            
+                
+                            <input type="button" name="next" class="next action-button" value="Proceed" />
+                
+
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Uploads & Results</h2>
+                                    </div>
+                                    <div class="col-5">
+                                        <h2 class="steps">Step 2 - 3</h2>
+                                    </div>
+                                </div> 
+
+                                <div class="form-content mb-4">
+                                    <div class="mt-2">
+                                    <h4 class="form-subheader text-blue">1. Document Uploads</h4>
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="sec_school_test" class="form-label">Secondary School Testimonial</label>
+                                                <input type="file" name="sec_school_test" class="form-control dash-control" id="sec_school_test" accept=".pdf,.jpg,.jpeg,.png">
+                                                <small class="form-text text-red font-600 font-13">Max. Size - 2MB (Accepted formats: pdf, jpg, jpeg, png)</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="birth_certificate" class="form-label">Birth Certificate / Declaration of Age</label>
+                                                <input type="file" name="birth_certificate" class="form-control dash-control" id="birth_certificate" accept=".pdf,.jpg,.jpeg,.png">
+                                                <small class="form-text text-red font-600 font-13">Max. Size - 2MB (Accepted formats: pdf, jpg, jpeg, png)</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="o_level_result" class="form-label">Upload O Level Result(s)</label>
+                                                <input type="file" name="o_level_result" class="form-control dash-control" id="o_level_result" accept=".pdf,.jpg,.jpeg,.png" multiple>
+                                                <small class="form-text text-red font-600 font-13">Max. Size - 2MB (Accepted formats: pdf, jpg, jpeg, png)</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="attestation_letter" class="form-label">Attestation Letter (Refresher course only)</label>
+                                                <input type="file" name="attestation_letter" class="form-control dash-control" id="attestation_letter" accept=".pdf,.jpg,.jpeg,.png">
+                                                <small class="form-text text-red font-600 font-13">Max. Size - 2MB (Accepted formats: pdf, jpg, jpeg, png)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="mt-4">
+                                    <h4 class="form-subheader text-blue">2. Enter O Level Result</h4>
+                                    <div class="row">
+                                        <!-- <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="exam_body" class="form-label">Exam Body</label>
+                                                <select name="exam_body" id="exam_body" class="form-select dash-control">
+                                                    <option value="WAEC">WAEC</option>
+                                                    <option value="NECO">NECO</option>
+                                                    <option value="NABTEB">NABTEB</option>
+                                                </select>
+                                            </div>
+                                        </div> -->
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="exam_year" class="form-label">Exam Year</label>
+                                                <input type="number" name="exam_year" class="form-control dash-control" id="exam_year" placeholder="Enter Exam Year">
+                                            </div>
+                                        </div>
+
+                                        
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="exam_number" class="form-label">Exam Number</label>
+                                                <input type="text" name="exam_number" class="form-control dash-control" id="exam_number" placeholder="Enter Exam Number">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="exam_center" class="form-label">Exam Center</label>
+                                                <textarea rows="3" name="exam_center" id="exam_center" class="form-control dash-control" placeholder="Enter Exam Center"></textarea>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    </div>
+
+                                    <div class="mt-4">
+                                       <!-- <h4 class="form-subheader text-dark-blue">Enter O Level Result</h4> -->
+                                       <small><strong class="font-600"><span class="text-red"><span class="fa fa-warning"></span> Note:</span> You must have <span class="text-red">Five(5) credit</span> ‘O’ level passes in WASSCE or NECO, NABTEB or combined results (WASSCE & NECO) at not more than two (2) sittings. Subjects passed at credit level must include English Language, Chemistry, Biology, Physics and Mathematics.</strong></small>
+                                       <div class="table-responsive mt-4">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Subject</th>
+                                                    <th>Grade</th>
+                                                    <th>Exam Body</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="result-table-body">
+                                                <tr>
+                                                    <td><input type="text" name="subject[]" class="form-control dash-control" placeholder="Enter Subject" value="English Language" readonly></td>
+                                                    <td>
+                                                        <select name="grade[]" class="form-select dash-control">
+                                                            <option value="">-- Select --</option>
+                                                            <option value="A1">A1</option>
+                                                            <option value="B2">B2</option>
+                                                            <option value="B3">B3</option>
+                                                            <option value="C4">C4</option>
+                                                            <option value="C5">C5</option>
+                                                            <option value="C6">C6</option>
+                                                            <option value="D7">D7</option>
+                                                            <option value="E8">E8</option>
+                                                            <option value="F9">F9</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="exam_body[]" class="form-select dash-control">
+                                                            <option value="">-- Select --</option>
+                                                            <option value="WAEC">WAEC</option>
+                                                            <option value="NECO">NECO</option>
+                                                            <option value="NABTEB">NABTEB</option>
+                                                        </select>
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><input type="text" name="subject[]" class="form-control dash-control" placeholder="Enter Subject" value="Mathematics" readonly></td>
+                                                    <td>
+                                                        <select name="grade[]" class="form-select dash-control">
+                                                            <option value="">-- Select --</option>
+                                                            <option value="A1">A1</option>
+                                                            <option value="B2">B2</option>
+                                                            <option value="B3">B3</option>
+                                                            <option value="C4">C4</option>
+                                                            <option value="C5">C5</option>
+                                                            <option value="C6">C6</option>
+                                                            <option value="D7">D7</option>
+                                                            <option value="E8">E8</option>
+                                                            <option value="F9">F9</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="exam_body[]" class="form-select dash-control">
+                                                            <option value="">-- Select --</option>
+                                                            <option value="WAEC">WAEC</option>
+                                                            <option value="NECO">NECO</option>
+                                                            <option value="NABTEB">NABTEB</option>
+                                                        </select>
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" name="subject[]" class="form-control dash-control" placeholder="Enter Subject" value="Biology" readonly></td>
+                                                    <td>
+                                                        <select name="grade[]" class="form-select dash-control">
+                                                            <option value="">-- Select --</option>
+                                                            <option value="A1">A1</option>
+                                                            <option value="B2">B2</option>
+                                                            <option value="B3">B3</option>
+                                                            <option value="C4">C4</option>
+                                                            <option value="C5">C5</option>
+                                                            <option value="C6">C6</option>
+                                                            <option value="D7">D7</option>
+                                                            <option value="E8">E8</option>
+                                                            <option value="F9">F9</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="exam_body[]" class="form-select dash-control">
+                                                            <option value="">-- Select --</option>
+                                                            <option value="WAEC">WAEC</option>
+                                                            <option value="NECO">NECO</option>
+                                                            <option value="NABTEB">NABTEB</option>
+                                                        </select>
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" name="subject[]" class="form-control dash-control" placeholder="Enter Subject" value="Chemistry" readonly></td>
+                                                    <td>
+                                                        <select name="grade[]" class="form-select dash-control">
+                                                            <option value="">-- Select --</option>
+                                                            <option value="A1">A1</option>
+                                                            <option value="B2">B2</option>
+                                                            <option value="B3">B3</option>
+                                                            <option value="C4">C4</option>
+                                                            <option value="C5">C5</option>
+                                                            <option value="C6">C6</option>
+                                                            <option value="D7">D7</option>
+                                                            <option value="E8">E8</option>
+                                                            <option value="F9">F9</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="exam_body[]" class="form-select dash-control">
+                                                            <option value="">-- Select --</option>
+                                                            <option value="WAEC">WAEC</option>
+                                                            <option value="NECO">NECO</option>
+                                                            <option value="NABTEB">NABTEB</option>
+                                                        </select>
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" name="subject[]" class="form-control dash-control" placeholder="Enter Subject" value="Physics" readonly></td>
+                                                    <td>
+                                                        <select name="grade[]" class="form-select dash-control">
+                                                            <option value="">-- Select --</option>
+                                                            <option value="A1">A1</option>
+                                                            <option value="B2">B2</option>
+                                                            <option value="B3">B3</option>
+                                                            <option value="C4">C4</option>
+                                                            <option value="C5">C5</option>
+                                                            <option value="C6">C6</option>
+                                                            <option value="D7">D7</option>
+                                                            <option value="E8">E8</option>
+                                                            <option value="F9">F9</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="exam_body[]" class="form-select dash-control">
+                                                            <option value="">-- Select --</option>
+                                                            <option value="WAEC">WAEC</option>
+                                                            <option value="NECO">NECO</option>
+                                                            <option value="NABTEB">NABTEB</option>
+                                                        </select>
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" name="subject[]" class="form-control dash-control" placeholder="Enter Subject"></td>
+                                                    <td>
+                                                        <select name="grade[]" class="form-select dash-control">
+                                                            <option value="">-- Select --</option>
+                                                            <option value="A1">A1</option>
+                                                            <option value="B2">B2</option>
+                                                            <option value="B3">B3</option>
+                                                            <option value="C4">C4</option>
+                                                            <option value="C5">C5</option>
+                                                            <option value="C6">C6</option>
+                                                            <option value="D7">D7</option>
+                                                            <option value="E8">E8</option>
+                                                            <option value="F9">F9</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="exam_body[]" class="form-select dash-control">
+                                                            <option value="">-- Select --</option>
+                                                            <option value="WAEC">WAEC</option>
+                                                            <option value="NECO">NECO</option>
+                                                            <option value="NABTEB">NABTEB</option>
+                                                        </select>
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" name="subject[]" class="form-control dash-control" placeholder="Enter Subject"></td>
+                                                    <td>
+                                                        <select name="grade[]" class="form-select dash-control">
+                                                            <option value="">-- Select --</option>
+                                                            <option value="A1">A1</option>
+                                                            <option value="B2">B2</option>
+                                                            <option value="B3">B3</option>
+                                                            <option value="C4">C4</option>
+                                                            <option value="C5">C5</option>
+                                                            <option value="C6">C6</option>
+                                                            <option value="D7">D7</option>
+                                                            <option value="E8">E8</option>
+                                                            <option value="F9">F9</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="exam_body[]" class="form-select dash-control">
+                                                            <option value="">-- Select --</option>
+                                                            <option value="WAEC">WAEC</option>
+                                                            <option value="NECO">NECO</option>
+                                                            <option value="NABTEB">NABTEB</option>
+                                                        </select>
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+
+                                        <button type="button" class="btn btn-success" onclick="addRow()" id="add-result-row"><span class="fa fa-add"></span> Add Result</button>
+
+                                       </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <input type="button" name="next" class="next action-button" value="Proceed" /> <input type="button" name="previous" class="previous action-button-previous" value="Go Back" />
+
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Payment & Finish:</h2>
+                                    </div>
+                                    <div class="col-5">
+                                        <h2 class="steps">Step 3 - 3</h2>
+                                    </div>
+                                </div>
+
+                                <div class="form-content mb-4">
+                                    <div class="mt-2">
+                                       <h4 class="form-subheader text-blue">1. Application Fee</h4>
+                                       <p class="font-16">Make a complete transfer of <b class="text-red">&#8358;20,000</b> to complete your application using the Account details below:</p>
+                                       <h6><strong class="text-red">Account Name:</strong> Nursing School</h6>
+                                       <h6><strong class="text-red">Account Number:</strong> 1234567890</h6>
+                                       <h6><strong class="text-red">Bank:</strong> First Bank</h6>
+                                    </div>
+
+                                <div class="mt-4">
+                                <h4 class="form-subheader text-blue">2. Upload & Confirm</h4>
+                                <div class="row">
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="receipt" class="form-label">Upload Payment Receipt</label>
+                                                <input type="file" name="receipt" class="form-control dash-control" id="receipt" accept=".pdf,.jpg,.jpeg,.png">
+                                                <small class="form-text text-red font-600 font-13">Max. Size - 2MB (Accepted formats: pdf, jpg, jpeg, png)</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group dash-group mt-2">
+                                                <label for="signature" class="form-label">Applicant's Signature</label>
+                                                <input type="file" name="signature" class="form-control dash-control" id="signature" accept="image/*">
+                                                <!-- <small class="form-text text-red font-600 font-13">Max. Size - 2MB (Accepted formats: pdf, jpg, jpeg, png)</small> -->
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 col-lg-12 mt-4">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="confirm" value="option1" required/>
+                                                <label class="form-check-label font-14 font-500 text-dark-emphasis" for="confirm">I've Confirmed that all Informations submitted to Rivers State College of Nursing Sciences, Port Harcourt for the purpose of Admission Application are correct.</label>
+                                            </div>
+                                        </div>
+                                </div>
+                                </div>
+
+                                </div>
+                                
+                            </div>
+
+                             <input type="button" name="next" class="next action-button" value="Finish" /> <input type="button" name="previous" class="previous action-button-previous" value="Go Back" />
+
+                        </fieldset>
+                        <!-- <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Finish:</h2>
+                                    </div>
+                                    <div class="col-5">
+                                        <h2 class="steps">Step 4 - 4</h2>
+                                    </div>
+                                </div> <br><br>
+                                <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
+                                <div class="row justify-content-center">
+                                    <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png" class="fit-image"> </div>
+                                </div> <br><br>
+                                <div class="row justify-content-center">
+                                    <div class="col-7 text-center">
+                                        <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset> -->
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -51,7 +1024,7 @@
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <!-- Jquery 3.5.1 -->
         <script src="js/jquery-2.1.3.min.js"></script>
-                        <!-- WOW JS -->
+        <!-- WOW JS -->
     <script src="js/wow.js"></script>
     <script>
         wow = new WOW(
@@ -85,5 +1058,56 @@
         </script>
         <!-- Custom JS -->
         <script src="js/application.js"></script>
+
+        <script>
+            // Adding Results Dynamically
+//   let addedRows = 0; // Count only the extra rows (max 2)
+
+  function addRow() {
+    const tbody = document.getElementById("result-table-body");
+    const totalRows = tbody.rows.length;
+
+    if (totalRows >= 9) {
+      alert("You can only add up to 2 more subjects (maximum 9).");
+      return;
+    }
+
+    // const newRow = tbody.insertRow();
+    const index = totalRows + 1;
+    var newRow = `                              <tr>
+                                                    <td><input type="text" name="subject[]" class="form-control dash-control" placeholder="Enter Subject"></td>
+                                                    <td>
+                                                        <select name="grade[]" class="form-select dash-control">
+                                                            <option value="">-- Select --</option>
+                                                            <option value="A1">A1</option>
+                                                            <option value="B2">B2</option>
+                                                            <option value="B3">B3</option>
+                                                            <option value="C4">C4</option>
+                                                            <option value="C5">C5</option>
+                                                            <option value="C6">C6</option>
+                                                            <option value="D7">D7</option>
+                                                            <option value="E8">E8</option>
+                                                            <option value="F9">F9</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="exam_body[]" class="form-select dash-control">
+                                                            <option value="">-- Select --</option>
+                                                            <option value="WAEC">WAEC</option>
+                                                            <option value="NECO">NECO</option>
+                                                            <option value="NABTEB">NABTEB</option>
+                                                        </select>
+                                                    </td>
+                                                    <td><button type="button" class="btn btn-danger remove-result-row"><span class="fa fa-trash-alt"></span></button></td>
+                                                </tr>`;
+    $('#result-table-body').append(newRow);
+    // addedRows++;
+  }
+
+$(document).on('click', '.remove-result-row', function() {
+    $(this).closest('tr').remove();
+});
+
+        </script>
     </body>
 </html>
