@@ -657,7 +657,8 @@ body p,a {
   }
 
   .department-content img {
-    min-height: 240px;
+    height: 250px;
+    width: 100%;
     transition: 0.5s ease-in-out;
   }
 
@@ -948,7 +949,7 @@ body p,a {
 }
 
 .registry-banner {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(../img/registry.webp) no-repeat center;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(../img/uploads/IMG_7106.JPG) no-repeat center;
   min-height: 300px;
   background-size: cover;
   padding-top: 95px;
