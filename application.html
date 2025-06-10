@@ -1069,7 +1069,21 @@
         <script src="js/application.js"></script>
 
         <script>
-            // Adding Results Dynamically
+// Preventing more than 2 file uploads for O Level Result
+document.getElementById('o_level_result').addEventListener('change', function () {
+    const maxFiles = 2;
+    
+    if (this.files.length > maxFiles) {
+                Swal.fire({
+icon: 'error',
+title: 'Maximum File Upload Exceeded',
+text: `You can only upload up to ${maxFiles} files, Upload Again!`,
+});
+        this.value = ''; // Clear the input
+    }
+});
+
+// Adding Results Dynamically
 //   let addedRows = 0; // Count only the extra rows (max 2)
 
   function addRow() {
